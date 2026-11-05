@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consulta de cantidades por periodo - Asignación de números de oficio</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="encabezado">
+  <h1>Sistema de asignación automatizada de números de oficio<small>Instituto Tecnológico de Colima</small></h1>
+  <span class="rol">Secretaría de Dirección</span>
+</header>
+<div class="layout">
+<nav class="menu"><a href="registro_general.html">Solicitudes</a><a href="consulta_departamento.html">Por departamento</a><a href="consulta_periodo.html" class=activo>Por periodo</a><a href="login.html">Cerrar sesión</a></nav>
+<main class="contenido">
+<h2>Consulta de cantidades por periodo</h2>
+<form>
+  <div class="fila">
+    <div><label for="fini">Fecha inicial</label><input id="fini" type="date" value="2026-10-09"></div>
+    <div><label for="ffin">Fecha final</label><input id="ffin" type="date" value="2026-10-09"></div>
+  </div>
+  <div class="fila">
+    <div><label for="depto">Departamento</label><select id="depto"><option>Todos los departamentos</option><option>Recursos Humanos</option><option>Servicios Escolares</option><option>Vinculación</option><option>Planeación</option><option>Control Escolar</option><option>Coordinación Académica</option></select></div>
+    <div><button type="button" class="boton">Consultar</button></div>
+  </div>
+</form>
+<!-- DATOS DE EJEMPLO: agrupar solicitudes_oficio por departamento y estado (GROUP BY) -->
+<table>
+  <tr><th>Departamento</th><th>Pendientes</th><th>Validados</th><th>Cancelados</th><th>Total</th></tr>
+  <tr><td>Recursos Humanos</td><td>1</td><td>0</td><td>1</td><td>2</td></tr>
+  <tr><td>Servicios Escolares</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+  <tr class="total"><td>Total general</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+</table>
+<p class="nota">Datos de ejemplo</p>
+</main>
+</div>
+</body>
+</html>

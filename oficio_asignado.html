@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Número de oficio asignado - Asignación de números de oficio</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="encabezado">
+  <h1>Automatizacion de oficios</h1>
+  <span class="rol">Secretaría departamental</span>
+</header>
+<div class="layout">
+<nav class="menu"><a href="solicitar_oficio.html" class=activo>Nueva solicitud</a><a href="login.html">Cerrar sesión</a></nav>
+<main class="contenido">
+<h2>Número de oficio asignado</h2>
+<!-- DATOS DE EJEMPLO: reemplazar con el registro guardado en SQL Server -->
+<div class="alerta-ok">Solicitud registrada. Número asignado: 0042/2026</div>
+<label>Departamento (solo lectura)</label>
+<input value="Recursos Humanos" readonly>
+<label>Persona</label>
+<input value="Ana López" readonly>
+<label>Asunto (solo lectura)</label>
+<input value="Solicitud de constancias laborales" readonly>
+<label>Fecha y hora</label>
+<input value="09/10/2026 10:30" readonly>
+<label>Estado</label>
+<input value="Asignado · pendiente de validación" readonly>
+<a href="solicitar_oficio.html" class="boton">Nueva solicitud</a>
+<p class="nota">Datos de ejemplo</p>
+</main>
+</div>
+</body>
+</html>

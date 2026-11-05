@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solicitar número de oficio - Asignación de números de oficio</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="encabezado">
+  <h1>Sistema de asignación automatizada de números de oficio<small>Instituto Tecnológico de Colima</small></h1>
+  <span class="rol">Secretaría departamental</span>
+</header>
+<div class="layout">
+<nav class="menu"><a href="solicitar_oficio.html" class=activo>Nueva solicitud</a><a href="login.html">Cerrar sesión</a></nav>
+<main class="contenido">
+<h2>Solicitar número de oficio</h2>
+<!-- DATOS DE EJEMPLO: reemplazar con los datos del usuario que inició sesión -->
+<form action="oficio_asignado.html">
+  <label for="departamento">Departamento asignado (solo lectura)</label>
+  <input id="departamento" value="Recursos Humanos" readonly>
+  <label for="asunto">Asunto</label>
+  <input id="asunto" name="asunto" maxlength="250" required>
+  <label for="solicitante">Solicitante (automático)</label>
+  <input id="solicitante" value="Ana López" readonly>
+  <label for="fechahora">Fecha y hora (servidor, automáticas)</label>
+  <input id="fechahora" value="09/10/2026 10:30" readonly>
+  <button type="submit" class="boton">Solicitar número</button>
+</form>
+<p class="nota">Datos de ejemplo</p>
+</main>
+</div>
+</body>
+</html>
